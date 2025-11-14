@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLoginMutation } from "../../redux/auth/authApi";
+import { useLoginMutation } from "../../../redux/auth/authApi";
 import { useSelector } from "react-redux";
-import type { RootState } from "../../redux/store";
+import type { RootState } from "../../../redux/store";
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
