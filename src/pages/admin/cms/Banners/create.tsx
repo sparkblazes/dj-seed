@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import DragDrop from "../../../../../components/DragDrop";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import DragDrop from "../../../../../src/components/common/DragDropUpload";
+import Breadcrumb from "../../../../../src/components/navigation/BreadCrumbs";
 import {
   useCreateBannerMutation,
   useUpdateBannerMutation,
   useFetchBannerByIdQuery,
-} from "../../../../../redux/cms/Banners/bannerApi";
+} from "../../../../../src/redux/cms/Banners/bannerApi";
 
 const BannersCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

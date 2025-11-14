@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
-import DataTable from "../../../../../components/Common/DataTable";
-import ColumnSettingsModal from "../../../../../components/Common/ColumnSettingsModal";
-import FileImportModal from "../../../../../components/Common/FileImportModal";
+import Breadcrumb from "../../../../../src/components/navigation/BreadCrumbs";
+import DataTable from "../../../../../src/components/common/DataTableManager";
+import ColumnSettingsModal from "../../../../../src/components/common/";
+import FileImportModal from "../../../../../src/assets/";
 
 import {
   useFetchBannersQuery,
   useDeleteBannerMutation,
   useImportBannersMutation,
   useExportBannersMutation,
-} from "../../../../../redux/cms/Banners/bannerApi";
+} from "../../../../../src/redux/cms/Banners/bannerApi";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setFilters,
   setVisibleColumns,
-} from "../../../../../redux/cms/Banners/bannerSlice";
-import type { RootState, AppDispatch } from "../../../../../redux/store";
+} from "../../../../../src/redux/cms/Banners/bannerSlice";
+import type { RootState, AppDispatch } from "../../../../../src/redux/store";
 
 // const ALL_COLUMNS = [
 //   { key: "title", label: "Title", sortable: true },
