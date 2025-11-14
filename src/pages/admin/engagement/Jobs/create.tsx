@@ -6,7 +6,7 @@ import {
   useUpdateJobMutation,
   useFetchJobByIdQuery,
 } from "../../../../redux/engagement/Jobs/jobApi";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
+import ToggleSwitch from "../../../../components/common/DragDrop";
 
 const JobsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

@@ -6,7 +6,7 @@ import {
   useUpdateContactsMutation,
   useFetchContactsByIdQuery,
 } from "../../../../redux/engagement/Contacts/contactsApi";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
+import ToggleSwitch from "../../../../components/common/ToggleSwitch";
 
 const ContactsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
 import {
   useCreateTestimonialMutation,
   useUpdateTestimonialMutation,
   useFetchTestimonialByIdQuery,
-} from "../../../../../redux/engagement/Testimonials/testimonialApi";
-import DragDrop from "../../../../../components/DragDrop";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
+} from "../../../../redux/engagement/Testimonials/testimonialApi";
+import DragDrop from "../../../../components/common/DragDrop";
+import ToggleSwitch from "../../../../components/common/ToggleSwitch";
 
 const TestimonialsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

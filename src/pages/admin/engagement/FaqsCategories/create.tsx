@@ -6,7 +6,7 @@ import {
   useUpdateFaqCategoriesMutation,
   useFetchFaqCategoriesByIdQuery,
 } from "../../../../redux/engagement/FaqCategories/faqCategoriesApi";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
+import ToggleSwitch from "../../../../components/common/ToggleSwitch";
 
 const FaqCategoriesCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

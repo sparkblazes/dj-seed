@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
-import DataTable from "../../../../../components/Common/DataTable";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
+import DataTable from "../../../../components/common/SingleDataTable";
 import ColumnSettingsModal from "../../../../../components/Common/ColumnSettingsModal";
-import FileImportModal from "../../../../../components/Common/FileImportModal";
+import FileImportModal from "../../../../components/common/FileImportModal";
 
 import {
   useFetchApplicationsQuery,
   useDeleteApplicationMutation,
   useImportApplicationsMutation,
   useExportApplicationsMutation,
-} from "../../../../../redux/engagement/Applications/applicationApi";
+} from "../../../../redux/engagement/Applications/applicationApi";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setFilters,
   setVisibleColumns,
-} from "../../../../../redux/engagement/Applications/applicationSlice";
-import type { RootState, AppDispatch } from "../../../../../redux/store";
+} from "../../../../redux/engagement/Applications/applicationSlice";
+import type { RootState, AppDispatch } from "../../../../redux/store";
 
 // const ALL_COLUMNS = [
 //   { key: "id", label: "ID", sortable: true },

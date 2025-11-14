@@ -6,8 +6,8 @@ import {
   useUpdateEventMutation,
   useFetchEventByIdQuery,
 } from "../../../../redux/engagement/Events/eventApi";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
-import DragDrop from "../../../../components/common/DragDropUpload";
+import ToggleSwitch from "../../../../components/common/ToggleSwitch";
+import DragDrop from "../../../../components/common/DragDrop";
 
 const EventsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

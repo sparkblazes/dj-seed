@@ -9,7 +9,7 @@ import {
 } from "../../../../redux/engagement/Faqs/faqApi";
 import { useLazyFetchDropdownFaqCategoriesQuery } from "../../../../redux/engagement/FaqCategories/faqCategoriesApi";
 import AsyncSelect from "react-select/async";
-import ToggleSwitch from "../../../../../components/ToggleSwitch";
+import ToggleSwitch from "../../../../components/common/ToggleSwitch";
 
 const FaqsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

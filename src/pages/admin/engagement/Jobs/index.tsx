@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
-import DataTable from "../../../../../components/Common/DataTable";
-import ColumnSettingsModal from "../../../../../components/Common/ColumnSettingsModal";
-import FileImportModal from "../../../../../components/Common/FileImportModal";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
+import DataTable from "../../../../components/common/SingleDataTable";
+import FileImportModal from "../../../../components/common/FileImportModal";
 
 import {
   useFetchJobsQuery,
   useDeleteJobMutation,
   useImportJobsMutation,
   useExportJobsMutation,
-} from "../../../../../redux/engagement/Jobs/jobApi";
+} from "../../../../redux/engagement/Jobs/jobApi";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setFilters,
   setVisibleColumns,
-} from "../../../../../redux/engagement/Jobs/jobSlice";
-import type { RootState, AppDispatch } from "../../../../../redux/store";
+} from "../../../../redux/engagement/Jobs/jobSlice";
+import type { RootState, AppDispatch } from "../../../../redux/store";
 
 // const ALL_COLUMNS = [
 //   { key: "id", label: "ID", sortable: true },
@@ -301,17 +300,7 @@ const JobsIndex: React.FC = () => {
         </div>
       </div>
 
-      {/* Column Settings Modal */}
-      <ColumnSettingsModal
-        show={showModal}
-        onClose={() => setShowModal(false)}
-        allColumns={data?.columns || []}
-        visibleColumns={data?.visible_columns || []}
-        setVisibleColumns={(cols) => dispatch(setVisibleColumns(cols))}
-        defaultColumns={visibleColumns || []}
-        localStorageKey={LS_KEY}
-      />
-
+  
       {/* File Import Modal */}
       <FileImportModal
         show={showImportModal}
