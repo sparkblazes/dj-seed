@@ -30,11 +30,11 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
       {customTitle && <h2 className="mb-1">{customTitle}</h2>}
 
       {/* Breadcrumb and buttons in one line */}
-      <div className="d-flex justify-content-between align-items-center mb-2">
+      <div className="d-flex justify-content-between align-items-center mb-1">
         {/* Breadcrumb */}
         {item && item.length > 0 && (
           <nav aria-label="breadcrumb">
-            <ol className="breadcrumb mb-0">
+            <ol className="breadcrumb mb-1">
               {item.map((crumb, idx) => (
                 <li
                   key={idx}
