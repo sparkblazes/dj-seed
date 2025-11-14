@@ -1,13 +1,13 @@
 // src/modules/admin/pages/engagement/Faqs/create.tsx
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
 import {
   useCreateFaqMutation,
   useUpdateFaqMutation,
   useFetchFaqByIdQuery,
-} from "../../../../../redux/engagement/Faqs/faqApi";
-import { useLazyFetchDropdownFaqCategoriesQuery } from "../../../../../redux/engagement/FaqCategories/faqCategoriesApi";
+} from "../../../../redux/engagement/Faqs/faqApi";
+import { useLazyFetchDropdownFaqCategoriesQuery } from "../../../../redux/engagement/FaqCategories/faqCategoriesApi";
 import AsyncSelect from "react-select/async";
 import ToggleSwitch from "../../../../../components/ToggleSwitch";
 

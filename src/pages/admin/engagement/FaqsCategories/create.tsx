@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
 import {
   useCreateFaqCategoriesMutation,
   useUpdateFaqCategoriesMutation,
   useFetchFaqCategoriesByIdQuery,
-} from "../../../../../redux/engagement/FaqCategories/faqCategoriesApi";
+} from "../../../../redux/engagement/FaqCategories/faqCategoriesApi";
 import ToggleSwitch from "../../../../../components/ToggleSwitch";
 
 const FaqCategoriesCreate: React.FC = () => {

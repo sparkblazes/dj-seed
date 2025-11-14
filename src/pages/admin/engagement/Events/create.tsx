@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
 import {
   useCreateEventMutation,
   useUpdateEventMutation,
   useFetchEventByIdQuery,
-} from "../../../../../redux/engagement/Events/eventApi";
+} from "../../../../redux/engagement/Events/eventApi";
 import ToggleSwitch from "../../../../../components/ToggleSwitch";
-import DragDrop from "../../../../../components/DragDrop";
+import DragDrop from "../../../../components/common/DragDropUpload";
 
 const EventsCreate: React.FC = () => {
   const { id } = useParams<{ id: string }>();

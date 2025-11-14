@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Breadcrumb from "../../../../../components/Layouts/Breadcrumb";
+import Breadcrumb from "../../../../components/navigation/BreadCrumbs";
 import {
   useCreateJobMutation,
   useUpdateJobMutation,
   useFetchJobByIdQuery,
-} from "../../../../../redux/engagement/Jobs/jobApi";
+} from "../../../../redux/engagement/Jobs/jobApi";
 import ToggleSwitch from "../../../../../components/ToggleSwitch";
 
 const JobsCreate: React.FC = () => {
