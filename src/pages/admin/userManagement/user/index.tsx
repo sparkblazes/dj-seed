@@ -5,8 +5,8 @@ import {
   useGetUsersQuery,
   useDeleteUserMutation,
   useDeleteMultipleUsersMutation,
-} from "../../../redux/userManagement/user/userApi";
-import CommonDataTable from "../../../components/common/SingleDataTable";
+} from "../../../../redux/userManagement/user/userApi";
+import CommonDataTable from "../../../../components/common/SingleDataTable";
 import { Toast } from "primereact/toast";
 import { Button } from "primereact/button";
 

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Breadcrumb from "../../../../../src/components/navigation/BreadCrumbs";
 import DataTable from "../../../../../src/components/common/DataTableManager";
-import ColumnSettingsModal from "../../../../../src/components/common/";
-import FileImportModal from "../../../../../src/assets/";
+import ColumnSettingsModal from "../../../../../src/components/navigation";
+import FileImportModal from "../../../../../src/components/common/FileImportModal";
 
 import {
   useFetchBannersQuery,
